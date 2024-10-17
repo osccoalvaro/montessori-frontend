@@ -15,7 +15,7 @@ contactForm.addEventListener('submit', async e => {
   });
   try {
     // const response = await fetch('/send-message', {
-    const response = await fetch('https://montessori-backend.vercel.app/send-message', {
+    const response = await fetch('https://montessori-backend.vercel.app', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
