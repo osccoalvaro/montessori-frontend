@@ -14,8 +14,9 @@ contactForm.addEventListener('submit', async e => {
     timeZone: 'America/Lima',
   });
   try {
-    // const response = await fetch('/send-message', {
-    const response = await fetch('https://montessori-backend.vercel.app', {
+//const response = await fetch('/send-message', {
+    const response = await fetch('https://montessori-backend.vercel.app/send-message', {
+      //const response = await fetch('http://localhost:3000/send-message', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
