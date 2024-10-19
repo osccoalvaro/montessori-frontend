@@ -14,9 +14,8 @@ contactForm.addEventListener('submit', async e => {
     timeZone: 'America/Lima',
   });
   try {
-//const response = await fetch('/send-message', {
     const response = await fetch('https://montessori-backend.vercel.app/send-message', {
-      //const response = await fetch('http://localhost:3000/send-message', {
+    //const response = await fetch('http://localhost:3000/send-message', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -37,12 +36,8 @@ contactForm.addEventListener('submit', async e => {
         title: '¡Mensaje enviado!',
         text: 'Uno de nuestros asesores se comunicará contigo',
       });
-      nombreInput.value = '';
-      apellidoInput.value = '';
-      dniInput.value = '';
-      emailInput.value = '';
-      telefonoInput.value = '';
-      gradoInput.value = '';
+      // Limpiar los valores de los inputs
+      clearInputs();
     } else {
       const errorData = await response.json();
       Swal.fire({
@@ -59,6 +54,16 @@ contactForm.addEventListener('submit', async e => {
     });
   }
 });
+
+// Función para limpiar los inputs y eliminar la clase focus
+function clearInputs() {
+  const inputs = document.querySelectorAll(".input");
+  inputs.forEach(input => {
+    input.value = "";
+    let parent = input.parentNode;
+    parent.classList.remove("focus");
+  });
+}
 
 /*
 const contactForm = document.getElementById('contactForm');
