@@ -1309,6 +1309,10 @@ video {
     align-items: flex-start;
   }
 
+  .lg\:whitespace-nowrap {
+    white-space: nowrap;
+  }
+
   .lg\:rounded-2xl {
     border-radius: 1rem;
   }
@@ -1395,6 +1399,10 @@ video {
 
   .xl\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .xl\:whitespace-nowrap {
+    white-space: nowrap;
   }
 
   .xl\:text-2xl {
