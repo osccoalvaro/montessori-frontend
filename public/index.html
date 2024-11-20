@@ -16,9 +16,15 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/review.css">
 	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/pdf.css">
 	<link rel="stylesheet" href="css/whatsapp.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+	 <!--=============== BOXICONS ===============-->
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
 	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="https://montessori.pe">
 	<meta property="og:type" content="website">
@@ -35,6 +41,39 @@
 
 	gtag('config', 'G-W9LEWQR1WS');
 	</script>
+
+<style>
+	#pdf-container {
+		width: 100%;
+		/*height: 550px;*/
+		overflow-y: scroll;
+		cursor: grab; /* Cambia el cursor a "manito" */
+		overflow-x: hidden; /* Desactiva el scroll horizontal del PDF */
+
+	}
+
+    #pdf-container:active {
+        cursor: grabbing; /* Cambia el cursor al hacer click */
+    }
+
+	#pdf-container::-webkit-scrollbar {
+		width: 6px; /* Ancho de la barra de scroll */
+		background: transparent; /* Color de fondo del scroll */
+	}
+
+	#pdf-container::-webkit-scrollbar-thumb {
+		background: #64748B; /* Color de la barra de scroll */
+		border-radius: 4px; /* Bordes redondeados */
+	}
+
+	#pdf-container::-webkit-scrollbar-thumb:hover {
+		background: #1E293B; /* Color al pasar el mouse */
+
+	}
+	canvas {
+		display: block;
+	}
+</style>
 </head>
 
 <body class="antialiased">
@@ -146,7 +185,7 @@
 			<div data-aos="" class="text-center md:w-5/12 md:text-left">
 				<h2 class="text-3xl font-bold lg:text-4xl text-darken lg:pr-32">Exigencia académica</h2>
 				<p class="leading-6 my-5 text-lg lg:pr-10 lg:text-xl lg:max-w-lg text-darken">Diseño de un programa curricular orientado al logro de competencias.</p>
-				<button onclick="location.href='#form'"
+				<button id="open-modal"
 					class="flex items-center justify-center px-6 py-0 pr-2 m-auto text-lg transition duration-300 ease-in-out transform border-2 rounded-full lg:m-0 border-blue text-blue pl-9 focus:outline-none hover:scale-110">
 					Contactanos <div class="-mt-1 -mb-1 -ml-1 lottie-container w-14"></div>
 				</button>			
@@ -400,6 +439,99 @@
 		</iframe>
 	</div>
 
+
+	<section class="">
+		
+
+		<div class="modal__container" id="modal-container">
+			<div class="modal__content">
+				<div class="modal__close close-modal" title="Cerrar">
+					<i class='bx bx-x'></i>
+				</div>
+
+			   
+			   
+				
+			   
+	<div id="pdf-container"></div>
+	<script>
+		const url = 'doc/boletin.pdf';
+
+		pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+
+		const container = document.getElementById('pdf-container');
+
+		pdfjsLib.getDocument(url).promise.then(pdf => {
+			// Obtener y renderizar solo la primera página al principio
+			pdf.getPage(1).then(page => {
+				const viewport = page.getViewport({ scale: 1 });
+				const containerWidth = container.offsetWidth; // Ancho del contenedor
+				const scale = containerWidth / viewport.width; // Escala para ajustar al ancho
+				const outputScale = window.devicePixelRatio || 1; // Densidad de píxeles del dispositivo
+
+				// Crear el canvas
+				const canvas = document.createElement('canvas');
+				const context = canvas.getContext('2d');
+
+				// Ajustar el tamaño del canvas para alta resolución
+				const scaledViewport = page.getViewport({ scale });
+				canvas.width = Math.floor(scaledViewport.width * outputScale);
+				canvas.height = Math.floor(scaledViewport.height * outputScale);
+				canvas.style.width = `${scaledViewport.width}px`;
+				canvas.style.height = `${scaledViewport.height}px`;
+
+				const renderContext = {
+					canvasContext: context,
+					viewport: scaledViewport,
+					transform: [outputScale, 0, 0, outputScale, 0, 0], // Renderización en alta densidad
+				};
+
+				container.appendChild(canvas);
+
+				// Ajustar la altura dinámica del contenedor al canvas
+				container.style.height = `${scaledViewport.height}px`;
+
+				// Renderizar la primera página
+				page.render(renderContext);
+			});
+
+			// Opcional: Renderizar páginas adicionales bajo demanda al hacer scroll
+			for (let i = 2; i <= pdf.numPages; i++) {
+				pdf.getPage(i).then(page => {
+					const viewport = page.getViewport({ scale: 1 });
+					const containerWidth = container.offsetWidth;
+					const scale = containerWidth / viewport.width;
+					const outputScale = window.devicePixelRatio || 1;
+
+					const canvas = document.createElement('canvas');
+					const context = canvas.getContext('2d');
+
+					const scaledViewport = page.getViewport({ scale });
+					canvas.width = Math.floor(scaledViewport.width * outputScale);
+					canvas.height = Math.floor(scaledViewport.height * outputScale);
+					canvas.style.width = `${scaledViewport.width}px`;
+					canvas.style.height = `${scaledViewport.height}px`;
+
+					const renderContext = {
+						canvasContext: context,
+						viewport: scaledViewport,
+						transform: [outputScale, 0, 0, outputScale, 0, 0],
+					};
+
+					container.appendChild(canvas);
+
+					page.render(renderContext);
+				});
+			}
+		});
+	</script>
+			 
+
+				
+			</div>
+		</div>
+	</section>
+
 	<!-- Footer  -->
 	<footer class="bg-platzy lg:mt-32">
 		<div class="lg:px-20 lg:mt-24 m-auto max-w-screen-2xl pt-10">
@@ -504,6 +636,11 @@
 	<script src="js/review.js"></script>
 	<script src="js/sheetForm.js"></script>
 	<script src="js/form.js"></script>
+	<script src="js/pdf.js"></script>
+
+	
+	
+
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>

@@ -1,0 +1,107 @@
+
+
+.modal{
+  display: grid;
+  place-items: center;
+}
+
+.modal__button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+
+
+.modal__container {
+  position: fixed; /* Cubre toda la ventana */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo que cubre toda la pantalla */
+  display: flex;
+  align-items: flex-end; /* Posiciona el contenido en la parte inferior */
+  justify-content: center; /* Centrado horizontal */
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: var(--z-modal);
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.modal__content{
+  position: relative;
+  background-color: white;
+  text-align: center;
+  /*padding: 2rem 1.5rem 0rem;*/  
+  padding-top: 12px;
+  padding-right: 6px;
+  padding-left: 12px;
+  transition: all .3s;
+  width: 100%;
+  max-width: 630px; /* Ancho máximo */
+  border-radius: 1rem 1rem 0 0;
+   /* Sombra para dar perspectiva */
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+
+  /*=== Effect 1 ===*/
+  transform: translateY(10%);
+
+  /*=== Effect 2 ===*/
+  /* transform: scale(.5) translateY(10%); */
+
+  /*=== Effect 3 ===*/
+  /* transform: rotateX(65deg) scale(.75) translateY(10%);
+  transform-origin: 50% 100%; */
+}
+
+
+.modal__close{
+  display: inline-flex;
+  background-color: #1E293B;
+  border-radius: 100px;
+  color: #FFF;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.modal__description{
+  margin-bottom: 1.5rem;
+}
+
+.modal__button-width{
+  width: 90%;
+}
+
+
+
+/* Show modal */
+.show-modal{
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-modal .modal__content{
+  /*=== Effect 1 ===*/
+  transform: translateY(0);
+
+  /*=== Effect 2 ===*/
+  /* transform: scale(1) translateY(0); */
+
+  /*=== Effect 3 ===*/
+  /* transform: rotateX(0) scale(1) translateY(0); */
+}
+
+
+
+.no-scroll {
+  overflow: hidden; /* Desactiva el scroll */
+}
