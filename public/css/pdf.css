@@ -31,6 +31,7 @@
   z-index: var(--z-modal);
   visibility: hidden;
   opacity: 0;
+  z-index: 9999;
 }
 
 
@@ -44,8 +45,10 @@
   padding-left: 12px;
   transition: all .3s;
   width: 100%;
-  max-width: 630px; /* Ancho máximo */
-  border-radius: 1rem 1rem 0 0;
+  /*max-width: 630px;  Ancho máximo */
+  height: none; /* Ocupa el 90% de la pantalla */
+  max-width: 90vh; /* Ancho máximo */
+    border-radius: 1rem 1rem 0 0;
    /* Sombra para dar perspectiva */
    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
 
@@ -104,4 +107,16 @@
 
 .no-scroll {
   overflow: hidden; /* Desactiva el scroll */
+}
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (min-width: 576px){
+  .modal__content{
+    height: 90vh;
+  }
+
 }

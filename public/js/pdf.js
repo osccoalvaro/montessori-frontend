@@ -1,33 +1,22 @@
 /*=============== SHOW MODAL ===============*/
-const showModal = (openButton, modalContent) => {
-    const openBtn = document.getElementById(openButton),
-        modalContainer = document.getElementById(modalContent);
+const openButtons = document.querySelectorAll('.open-modal'); // Selecciona todos los botones con la clase 'open-modal'
+const modalContainer = document.getElementById('modal-container'); // Contenedor del popup
 
-    if (openBtn && modalContainer) {
-        openBtn.addEventListener("click", () => {
-            modalContainer.classList.add("show-modal");
-
-            // Bloquea el scroll y ajusta el margen
-            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-            document.body.style.overflow = "hidden";
-            document.body.style.marginRight = `${scrollBarWidth}px`;
-        });
-    }
-};
-showModal("open-modal", "modal-container");
+openButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        modalContainer.classList.add('show-modal'); // Muestra el modal
+    });
+});
 
 /*=============== CLOSE MODAL ===============*/
-const closeBtn = document.querySelectorAll(".close-modal");
+const closeBtn = document.querySelectorAll('.close-modal');
 
 function closeModal() {
-    const modalContainer = document.getElementById("modal-container");
-    modalContainer.classList.remove("show-modal");
-
-    // Habilita el scroll y resetea el margen
-    document.body.style.overflow = "";
-    document.body.style.marginRight = "";
+    modalContainer.classList.remove('show-modal'); // Oculta el modal
 }
-closeBtn.forEach((c) => c.addEventListener("click", closeModal));
+
+closeBtn.forEach(c => c.addEventListener('click', closeModal));
+
 
 
 /*DRAGG AN DROP*/
@@ -61,4 +50,4 @@ pdfContainer.addEventListener('mousemove', (e) => {
     const y = e.pageY - pdfContainer.offsetTop; // Posición actual del cursor
     const walk = (y - startY) * 1.5; // Movimiento del scroll (ajustable con el multiplicador)
     pdfContainer.scrollTop = scrollTop - walk; // Aplica el desplazamiento
-}); 
+});
