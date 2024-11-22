@@ -2,21 +2,9 @@
 const openButtons = document.querySelectorAll('.open-modal'); // Selecciona todos los botones con la clase 'open-modal'
 const modalContainer = document.getElementById('modal-container'); // Contenedor del popup
 
-function disableScroll() {
-    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth; // Calcula el ancho de la barra de scroll
-    document.body.style.overflow = 'hidden'; // Deshabilita el scroll
-    document.body.style.marginRight = `${scrollBarWidth}px`; // Compensa el ancho de la barra de scroll
-}
-
-function enableScroll() {
-    document.body.style.overflow = ''; // Habilita el scroll
-    document.body.style.marginRight = ''; // Elimina la compensación
-}
-
 openButtons.forEach(button => {
     button.addEventListener('click', () => {
         modalContainer.classList.add('show-modal'); // Muestra el modal
-        disableScroll(); // Deshabilita el scroll con compensación
     });
 });
 
@@ -25,10 +13,10 @@ const closeBtn = document.querySelectorAll('.close-modal');
 
 function closeModal() {
     modalContainer.classList.remove('show-modal'); // Oculta el modal
-    enableScroll(); // Habilita el scroll nuevamente
 }
 
 closeBtn.forEach(c => c.addEventListener('click', closeModal));
+
 
 
 /*DRAGG AN DROP*/
