@@ -19,6 +19,10 @@ body {
     background-color: #0364FF;
 }
 
+.bg-blue-disabled {
+    background-color: #AFCBFF;
+}
+
 .bg-blanco {
     background-color: #F8FAFC;
 }
