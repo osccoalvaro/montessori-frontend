@@ -808,8 +808,8 @@ video {
   width: 0.5rem;
 }
 
-.w-x {
-  width: 6.25rem;
+.w-\[100px\] {
+    width: 100px;
 }
 
 .w-\[1\.25rem\] {
