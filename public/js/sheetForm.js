@@ -45,6 +45,7 @@ contactForm.addEventListener('submit', async e => {
       });
       // Limpiar los valores de los inputs
       clearInputs();
+      reEnableButton();
     } else {
       const errorData = await response.json();
       Swal.fire({
