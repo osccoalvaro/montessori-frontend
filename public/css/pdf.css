@@ -1,11 +1,9 @@
-
-
-.modal{
+.modal {
   display: grid;
   place-items: center;
 }
 
-.modal__button{
+.modal__button {
   display: inline-block;
   background-color: var(--first-color);
   color: #FFF;
@@ -17,15 +15,21 @@
 
 
 .modal__container {
-  position: fixed; /* Cubre toda la ventana */
+  position: fixed;
+  /* Cubre toda la ventana */
   top: 0;
   left: 0;
-  width: 100vw; /* Asegura que ocupe el ancho completo de la ventana */
-  height: 100vh; /* Asegura que ocupe el alto completo de la ventana */
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo que cubre toda la pantalla */
+  width: 100vw;
+  /* Asegura que ocupe el ancho completo de la ventana */
+  height: 100vh;
+  /* Asegura que ocupe el alto completo de la ventana */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo que cubre toda la pantalla */
   display: flex;
-  align-items: flex-end; /* Posiciona el contenido en la parte inferior */
-  justify-content: center; /* Centrado horizontal */
+  align-items: flex-end;
+  /* Posiciona el contenido en la parte inferior */
+  justify-content: center;
+  /* Centrado horizontal */
   overflow: hidden;
   transition: all 0.3s;
   z-index: var(--z-modal);
@@ -35,22 +39,20 @@
 }
 
 
-.modal__content{
+.modal__content {
   position: relative;
   background-color: white;
-  text-align: center;
-  /*padding: 2rem 1.5rem 0rem;*/  
-  padding-top: 12px;
+  padding-top: 6px;
   padding-right: 6px;
-  padding-left: 12px;
+  padding-left: 6px;
   transition: all .3s;
   width: 100%;
   /*max-width: 630px;  Ancho máximo */
-  height: none; /* Ocupa el 90% de la pantalla */
-  max-width: 90vh; /* Ancho máximo */
-    border-radius: 1rem 1rem 0 0;
-   /* Sombra para dar perspectiva */
-   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+  height: none;
+  /* Ocupa el 90% de la pantalla */
+  max-width: 90vh;
+  /* Sombra para dar perspectiva */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
 
   /*=== Effect 1 ===*/
   transform: translateY(10%);
@@ -64,7 +66,7 @@
 }
 
 
-.modal__close{
+.modal__close {
   display: inline-flex;
   background-color: #1E293B;
   border-radius: 100px;
@@ -76,23 +78,23 @@
   cursor: pointer;
 }
 
-.modal__description{
+.modal__description {
   margin-bottom: 1.5rem;
 }
 
-.modal__button-width{
+.modal__button-width {
   width: 90%;
 }
 
 
 
 /* Show modal */
-.show-modal{
+.show-modal {
   visibility: visible;
   opacity: 1;
 }
 
-.show-modal .modal__content{
+.show-modal .modal__content {
   /*=== Effect 1 ===*/
   transform: translateY(0);
 
@@ -106,8 +108,10 @@
 
 
 .no-scroll {
-  overflow: hidden; /* Desactiva el scroll */
-  height: 100%; /* Asegura que no se mueva */
+  overflow: hidden;
+  /* Desactiva el scroll */
+  height: 100%;
+  /* Asegura que no se mueva */
 }
 
 
@@ -115,9 +119,19 @@
 
 /*=============== BREAKPOINTS ===============*/
 
-@media screen and (min-width: 576px){
-  .modal__content{
+@media screen and (min-width: 576px) {
+  
+  .modal__content {
     height: 95vh;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+
+  .modal__close {
+    top: 2rem;
+    right: 2rem;
   }
 
 }
