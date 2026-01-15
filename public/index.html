@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Colegio Montessori en Villa María del Triunfo con más de 30 años de experiencia. Exigencia académica y formación humana. ¡Visita nuestro sitio web y contáctanos!">                                
+	<meta name="description"
+		content="Colegio Montessori en Villa María del Triunfo con más de 30 años de experiencia. Exigencia académica y formación humana. ¡Visita nuestro sitio web y contáctanos!">
 	<title>Colegio Montessori - Exigencia académica y formación humana</title>
 	<!-- Alpine -->
 	<script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
@@ -22,98 +23,109 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 
-	 <!--=============== BOXICONS ===============-->
-	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+	<!--=============== BOXICONS ===============-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 
 	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="https://montessori.pe">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Colegio Montessori - Exigencia académica y formación humana">
-	<meta property="og:description" content="Colegio Montessori en Villa María del Triunfo con más de 30 años de experiencia.">										    
+	<meta property="og:description"
+		content="Colegio Montessori en Villa María del Triunfo con más de 30 años de experiencia.">
 	<meta property="og:image" content="https://montessori.pe/img/colegio-montessori-estudiante-meta.webp">
 	<meta property="og:site_name" content="Colegio Montessori S.A.C.">
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-W9LEWQR1WS"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-W9LEWQR1WS');
+		gtag('config', 'G-W9LEWQR1WS');
 	</script>
 
-<style>
-	#pdf-container {
-		width: 100%;
-		overflow-y: scroll;
-		cursor: grab; /* Cambia el cursor a "manito" */
-		overflow-x: hidden; /* Desactiva el scroll horizontal del PDF */
-	}
+	<style>
+		#pdf-container {
+			width: 100%;
+			overflow-y: scroll;
+			cursor: grab;
+			/* Cambia el cursor a "manito" */
+			overflow-x: hidden;
+			/* Desactiva el scroll horizontal del PDF */
+		}
 
-    #pdf-container:active {
-        cursor: grabbing; /* Cambia el cursor al hacer click */
-    }
+		#pdf-container:active {
+			cursor: grabbing;
+			/* Cambia el cursor al hacer click */
+		}
 
-	canvas {
-		display: block;
-	}
-</style>
+		canvas {
+			display: block;
+		}
+	</style>
 </head>
 
 <body class="antialiased">
 	<!-- Navbar -->
 	<div x-data="{ open: false }" class="w-full text-gray-700 bg-blue">
 		<div class="flex flex-col px-6 lg:px-20 mx-auto max-w-screen-2xl md:items-center md:flex-row">
-			<div class="flex items-center justify-between py-6">			
-				<img class="z-50 md:mt-8 h-10 lg:h-11" src="img/colegio-montessori-logo2.svg" alt="">	
+			<div class="flex items-center justify-between py-6">
+				<img class="z-50 md:mt-8 h-10 lg:h-11" src="img/colegio-montessori-logo2.svg" alt="">
 				<a class="md:hidden" href="https://app.smiledu.com/montessori">
-					<img src="img/smiledu.svg" alt="Smiledu" class="w-9">	
+					<img src="img/smiledu.svg" alt="Smiledu" class="w-9">
 				</a>
 			</div>
 			<nav :class="{ 'transform md:transform-none': !open, 'h-full': open }"
 				class="flex flex-col flex-grow h-0 pb-4 md:pb-0 duration-300 scale-y-0 md:h-auto md:flex md:flex-row md:items-center md:justify-end">
 				<a class="z-10 py-2 mt-2 text-base text-center text-white bg-white border-2 border-white rounded-full px-7 bg-opacity-10"
-					href="https://app.smiledu.com/montessori" target="_blank">Aula Virtual</a>	
+					href="https://app.smiledu.com/montessori" target="_blank">Aula Virtual</a>
 			</nav>
 		</div>
 	</div>
-  
+
 	<div class="bg-blue">
-		<div class="flex flex-col px-6 lg:px-20 mx-auto max-w-screen-2xl lg:flex-row">	
+		<div class="flex flex-col px-6 lg:px-20 mx-auto max-w-screen-2xl lg:flex-row">
 			<!--Left col-->
-			<div class="flex flex-col items-center w-full text-center lg:w-6/12 my-5 xl:mt-20 2xl:mt-28 lg:items-start lg:text-left">
+			<div
+				class="flex flex-col items-center w-full text-center lg:w-6/12 my-5 xl:mt-20 2xl:mt-28 lg:items-start lg:text-left">
 				<h1 data-aos="fade-right" data-aos-once="true"
 					class="mb-5 text-4xl xl:text-5xl font-bold tracking-tight text-white">
-					Exigencia <span class="text-yellow">académica</span> y formación <span class="text-yellow">humana</span>
+					Exigencia <span class="text-yellow">académica</span> y formación <span
+						class="text-yellow">humana</span>
 				</h1>
-				<p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="mb-8 text-xl xl:text-2xl text-white max-w-64 lg:max-w-none">
+				<p data-aos="fade-down" data-aos-once="true" data-aos-delay="300"
+					class="mb-8 text-xl xl:text-2xl text-white max-w-64 lg:max-w-none">
 					30 años de experiencia educativa de calidad</p>
 				<div data-aos="fade-up" data-aos-once="true" data-aos-delay="700">
 					<button onclick="location.href='#form'"
-        				class="flex items-center pr-2 pl-9 text-lg text-white transition duration-300 ease-in-out transform bg-white border-2 border-white rounded-full bg-opacity-10 focus:outline-none hover:scale-110">
-    					Contáctanos <div class="-mt-1 -mb-1 -ml-1 lottie-container w-14"></div>
+						class="flex items-center pr-2 pl-9 text-lg text-white transition duration-300 ease-in-out transform bg-white border-2 border-white rounded-full bg-opacity-10 focus:outline-none hover:scale-110">
+						Contáctanos <div class="-mt-1 -mb-1 -ml-1 lottie-container w-14"></div>
 					</button>
 				</div>
 			</div>
 			<!--Right col-->
 			<div class="relative lg:w-8/12 lg:-mt-10">
-				<img data-aos-once="true" src="img/colegio-montessori-estudiante.webp" alt="montessori-estudiante">								  
+				<img data-aos-once="true" src="img/colegio-montessori-estudiante.webp" alt="montessori-estudiante">
 				<div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
 					class="absolute -left-3 sm:left-2 xl:left-8 top-14 sm:top-24 xl:top-36 2xl:top-44  floating-4">
-					<img class="h-10 sm:h-16 bg-white bg-opacity-50 rounded-lg" src="img/colegio-montessori-workspace.webp" alt="workspace">
+					<img class="h-10 sm:h-16 bg-white bg-opacity-50 rounded-lg"
+						src="img/colegio-montessori-workspace.webp" alt="workspace">
 				</div>
 				<div data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
 					class="absolute -right-4 xl:right-4 2xl:right-12 top-10 xl:top-24 2xl:top-32 floating">
-					<img class="h-16 sm:h-28 bg-white bg-opacity-50 rounded-lg" src="img/colegio-montessori-chat.webp" alt="chat">
+					<img class="h-16 sm:h-28 bg-white bg-opacity-50 rounded-lg" src="img/colegio-montessori-chat.webp"
+						alt="chat">
 				</div>
 				<div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
 					class="absolute -left-3 sm:left-2 lg:-left-4 bottom-7 sm:bottom-20 xl:bottom-24 2xl:bottom-28 floating">
-					<img class="h-10 sm:h-16 bg-white bg-opacity-50 rounded-lg" src="img/colegio-montessori-grade.webp" alt="profile">
+					<img class="h-10 sm:h-16 bg-white bg-opacity-50 rounded-lg" src="img/colegio-montessori-grade.webp"
+						alt="profile">
 				</div>
 				<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
 					class="absolute -right-0 xl:right-16 2xl:right-28 bottom-8 sm:bottom-14 xl:bottom-28 2xl:bottom-40  floating-4">
-					<img class="h-10 sm:h-full bg-white bg-opacity-50 rounded-full" src="img/colegio-montessori-book.png" alt="book">
+					<img class="h-10 sm:h-full bg-white bg-opacity-50 rounded-full"
+						src="img/colegio-montessori-book.png" alt="book">
 				</div>
 			</div>
 		</div>
@@ -122,27 +134,29 @@
 	<!-- Brindado por profesionales de las mejores universidades e institutos del Perú -->
 	<div class="mt-24 m-auto lg:px-12 max-w-screen-xl">
 		<div class="flex justify-center">
-			<p class="mb-8 text-gray text-center text-lg lg:text-2xl max-w-96 lg:max-w-none">Brindado por profesionales de las mejores universidades e institutos del Perú</p>
+			<p class="mb-8 text-gray text-center text-lg lg:text-2xl max-w-96 lg:max-w-none">Brindado por profesionales
+				de las mejores universidades e institutos del Perú</p>
 		</div>
 		<!-- Infinite horizontal scroll animation -->
-		<div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+		<div
+			class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
 			<ul
 				class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-				<li><img class="h-12" src="img/unmsm.svg" alt="UNI"/></li>
-				<li><img class="h-12" src="img/VILLAREAL.png" alt="UNFV"/></li>
-				<li><img class="h-12" src="img/CANTUTA.png" alt="UNE"/></li>
-				<li><img class="h-12" src="img/unmsm.svg" alt="UNI"/></li>
-				<li><img class="h-12" src="img/VILLAREAL.png" alt="UNFV"/></li>
-				<li><img class="h-12" src="img/CANTUTA.png" alt="UNE"/></li>
+				<li><img class="h-12" src="img/unmsm.svg" alt="UNI" /></li>
+				<li><img class="h-12" src="img/VILLAREAL.png" alt="UNFV" /></li>
+				<li><img class="h-12" src="img/CANTUTA.png" alt="UNE" /></li>
+				<li><img class="h-12" src="img/unmsm.svg" alt="UNI" /></li>
+				<li><img class="h-12" src="img/VILLAREAL.png" alt="UNFV" /></li>
+				<li><img class="h-12" src="img/CANTUTA.png" alt="UNE" /></li>
 			</ul>
 			<ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
 				aria-hidden="true">
-				<li><img class="h-12" src="img/unmsm.svg" alt="UNI"/></li>
-				<li><img class="h-12" src="img/VILLAREAL.png" alt="UNFV"/></li>
-				<li><img class="h-12" src="img/CANTUTA.png" alt="UNE"/></li>
-				<li><img class="h-12" src="img/unmsm.svg" alt="UNI"/></li>
-				<li><img class="h-12" src="img/VILLAREAL.png" alt="UNFV"/></li>
-				<li><img class="h-12" src="img/CANTUTA.png" alt="UNE"/></li>
+				<li><img class="h-12" src="img/unmsm.svg" alt="UNI" /></li>
+				<li><img class="h-12" src="img/VILLAREAL.png" alt="UNFV" /></li>
+				<li><img class="h-12" src="img/CANTUTA.png" alt="UNE" /></li>
+				<li><img class="h-12" src="img/unmsm.svg" alt="UNI" /></li>
+				<li><img class="h-12" src="img/VILLAREAL.png" alt="UNFV" /></li>
+				<li><img class="h-12" src="img/CANTUTA.png" alt="UNE" /></li>
 			</ul>
 		</div>
 	</div>
@@ -152,7 +166,8 @@
 		<div class="flex flex-col items-center mt-12 md:flex-row md:justify-between">
 			<div data-aos="fade-right" class="text-center md:w-5/12 md:text-left">
 				<h2 class="text-3xl font-bold lg:text-4xl text-darken">Orden y disciplina</h2>
-				<p class="leading-6 my-5 text-lg lg:pr-10 lg:text-xl lg:max-w-lg text-darken">El respeto a las normas como pilar fundamental para la formación de ciudadanos responsables.</p>
+				<p class="leading-6 my-5 text-lg lg:pr-10 lg:text-xl lg:max-w-lg text-darken">El respeto a las normas
+					como pilar fundamental para la formación de ciudadanos responsables.</p>
 				<button
 					class="open-modal flex items-center justify-center px-6 py-0 pr-2 m-auto text-lg transition duration-300 ease-in-out transform border-2 rounded-full lg:m-0 border-blue text-blue pl-9 focus:outline-none hover:scale-110">
 					Propuesta educativa <div class="-mt-1 -mb-1 -ml-1 lottie-container w-14"></div>
@@ -169,19 +184,22 @@
 			</div>
 			<div data-aos="" class="text-center md:w-5/12 md:text-left">
 				<h2 class="text-3xl font-bold lg:text-4xl text-darken lg:pr-32">Exigencia académica</h2>
-				<p class="leading-6 my-5 text-lg lg:pr-10 lg:text-xl lg:max-w-lg text-darken">Diseño de un programa curricular orientado al logro de competencias.</p>
+				<p class="leading-6 my-5 text-lg lg:pr-10 lg:text-xl lg:max-w-lg text-darken">Diseño de un programa
+					curricular orientado al logro de competencias.</p>
 				<button
 					class="open-modal flex items-center justify-center px-6 py-0 pr-2 m-auto text-lg transition duration-300 ease-in-out transform border-2 rounded-full lg:m-0 border-blue text-blue pl-9 focus:outline-none hover:scale-110">
 					Propuesta educativa <div class="-mt-1 -mb-1 -ml-1 lottie-container w-14"></div>
-				</button>			
+				</button>
 			</div>
 		</div>
 		<!-- Departamento psicopedagógico -->
 		<div class="flex flex-col items-center mt-12 md:flex-row md:justify-between">
 			<div data-aos="fade-right" class="text-center md:w-5/12 md:text-left">
-				<h2 class="text-3xl font-bold lg:text-4xl text-darken xl:whitespace-nowrap">Departamento psicopedagógico</h2>
-				<p class="leading-6 my-5 text-lg lg:pr-10 lg:text-xl lg:max-w-lg text-darken">Contribución al bienestar emocional de nuestros estudiantes.</p>
-				<button 
+				<h2 class="text-3xl font-bold lg:text-4xl text-darken xl:whitespace-nowrap">Departamento psicopedagógico
+				</h2>
+				<p class="leading-6 my-5 text-lg lg:pr-10 lg:text-xl lg:max-w-lg text-darken">Contribución al bienestar
+					emocional de nuestros estudiantes.</p>
+				<button
 					class="open-modal flex items-center justify-center px-6 py-0 pr-2 m-auto text-lg transition duration-300 ease-in-out transform border-2 rounded-full lg:m-0 border-blue text-blue pl-9 focus:outline-none hover:scale-110">
 					Propuesta educativa <div class="-mt-1 -mb-1 -ml-1 lottie-container w-14"></div>
 				</button>
@@ -189,29 +207,31 @@
 			<div class="order-first mb-6 xl:mb-0 xl:order-none flex justify-end md:w-7/12">
 				<img data-aos="" src="img/img2.png" alt="gradebook">
 			</div>
-		</div>		
+		</div>
 	</div>
- 
+
 	<!-- Padres de familia que confían en nosotros -->
 	<div class="mt-24 max-w-full bg-blanco pt-32 pb-24">
-		<h2 class="text-4xl font-bold text-center lg:text-5xl text-darken tracking-tight max-w-xl m-auto">Padres de familia que confían en nosotros</h2>
+		<h2 class="text-4xl font-bold text-center lg:text-5xl text-darken tracking-tight max-w-xl m-auto">Padres de
+			familia que confían en nosotros</h2>
 		<!-- Review -->
 		<section class="testimonials max-w-screen-2xl m-auto px-5 lg:px-20">
 			<div class="testimonials-content ">
 				<div class="swiper testimonials-slider js-testimonials-slider ">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide testimonials-item ">
-							<div class="info">								
+							<div class="info">
 								<div class="user-info">
 									<img src="img/carlos.png" alt="" class="user">
 									<div class="text-box">
-									<h3 class="name">carlos yañez alban</h3>
-									<span class="date">Padre de familia</span>
+										<h3 class="name">carlos yañez alban</h3>
+										<span class="date">Padre de familia</span>
 									</div>
 								</div>
 								<img src="img/review-google.svg" alt="" class="google">
 							</div>
-							<p>Me gusta porque no sólo es un colegio que les imparte conocimientos sino que también les inculca valores y disciplina</p>
+							<p>Me gusta porque no sólo es un colegio que les imparte conocimientos sino que también les
+								inculca valores y disciplina</p>
 							<div class="rating-container">
 								<div class="rating">
 									<img src="img/review-star.svg" alt="" class="start">
@@ -224,12 +244,12 @@
 							</div>
 						</div>
 						<div class="swiper-slide testimonials-item">
-							<div class="info">								
+							<div class="info">
 								<div class="user-info">
 									<img src="img/irene.png" alt="" class="user">
 									<div class="text-box">
-									<h3 class="name">Irene De Quispe</h3>
-									<span class="date">Padre de familia</span>
+										<h3 class="name">Irene De Quispe</h3>
+										<span class="date">Padre de familia</span>
 									</div>
 								</div>
 								<img src="img/review-google.svg" alt="" class="google">
@@ -247,17 +267,18 @@
 							</div>
 						</div>
 						<div class="swiper-slide testimonials-item">
-							<div class="info">								
+							<div class="info">
 								<div class="user-info">
 									<img src="img/silvia.png" alt="" class="user">
 									<div class="text-box">
-									<h3 class="name">Silvia Torres Paredes</h3>
-									<span class="date">Padre de familia</span>
+										<h3 class="name">Silvia Torres Paredes</h3>
+										<span class="date">Padre de familia</span>
 									</div>
 								</div>
 								<img src="img/review-google.svg" alt="" class="google">
 							</div>
-							<p>Me trae muchos recuerdos de mis peques allí iniciaron ..María Montessori ...como creció el colegio 🥳</p>
+							<p>Me trae muchos recuerdos de mis peques allí iniciaron ..María Montessori ...como creció
+								el colegio 🥳</p>
 							<div class="rating-container">
 								<div class="rating">
 									<img src="img/review-star.svg" alt="" class="start">
@@ -270,12 +291,12 @@
 							</div>
 						</div>
 						<div class="swiper-slide testimonials-item">
-							<div class="info">								
+							<div class="info">
 								<div class="user-info">
 									<img src="img/buho.png" alt="" class="user">
 									<div class="text-box">
-									<h3 class="name">Buho Mayor</h3>
-									<span class="date">Padre de familia</span>
+										<h3 class="name">Buho Mayor</h3>
+										<span class="date">Padre de familia</span>
 									</div>
 								</div>
 								<img src="img/review-google.svg" alt="" class="google">
@@ -293,12 +314,12 @@
 							</div>
 						</div>
 						<div class="swiper-slide testimonials-item">
-							<div class="info">								
+							<div class="info">
 								<div class="user-info">
 									<img src="img/jose.png" alt="" class="user">
 									<div class="text-box">
-									<h3 class="name">José PRIETO MEZA</h3>
-									<span class="date">Padre de familia</span>
+										<h3 class="name">José PRIETO MEZA</h3>
+										<span class="date">Padre de familia</span>
 									</div>
 								</div>
 								<img src="img/review-google.svg" alt="" class="google">
@@ -322,45 +343,46 @@
 			</div>
 
 			<!-- Bento -->
-			<div class="bento"> 
+			<div class="bento">
 				<div class="row top">
 					<div class="card">
-					<img src="img/colegio.png" alt="Imagen 6">
-					<span class="title">Colegio</span>
+						<img src="img/colegio.png" alt="Imagen 6">
+						<span class="title">Colegio</span>
 					</div>
 					<div class="card">
-					<img src="img/inicial.jpg" alt="Imagen 7">
-					<span class="title">Inicial</span>
+						<img src="img/inicial.jpg" alt="Imagen 7">
+						<span class="title">Inicial</span>
 					</div>
 					<div class="card">
-					<img src="img/arte.png" alt="Imagen 8">
-					<span class="title">Arte</span>
+						<img src="img/arte.png" alt="Imagen 8">
+						<span class="title">Arte</span>
 					</div>
 				</div>
 
 				<div class="row bottom">
 					<div class="card ">
-					<img src="img/interaccion.jpg" alt="Imagen 9">
-					<span class="title">Interacción</span>
+						<img src="img/interaccion.jpg" alt="Imagen 9">
+						<span class="title">Interacción</span>
 					</div>
 					<div class="card">
-					<img src="img/secundaria.jpg" alt="Imagen 10">
-					<span class="title">Secundaria</span>
+						<img src="img/secundaria.jpg" alt="Imagen 10">
+						<span class="title">Secundaria</span>
 					</div>
 					<div class="card hide-mobile">
-					<img src="img/recreo.jpg" alt="Imagen 11">
-					<span class="title">Primaria</span>
+						<img src="img/recreo.jpg" alt="Imagen 11">
+						<span class="title">Primaria</span>
 					</div>
 				</div>
 			</div>
 		</section>
 	</div>
-	
+
 	<!-- Contact form -->
 	<section class="container px-6 py-4 mx-auto mt-24 lg:px-12" id="form">
-		<h2 class="text-4xl font-bold text-center lg:text-5xl text-darken tracking-tight">Matrícula 2026</h2> 
+		<h2 class="text-4xl font-bold text-center lg:text-5xl text-darken tracking-tight">Matrícula 2026</h2>
 		<div class="flex items-center justify-center">
-			<p class="my-9 text-lg text-center max-w-64 lg:max-w-none lg:pr-10 lg:text-xl text-darken">Déjanos tus datos y nos contactaremos contigo 👋</p>
+			<p class="my-9 text-lg text-center max-w-64 lg:max-w-none lg:pr-10 lg:text-xl text-darken">Déjanos tus datos
+				y nos contactaremos contigo 👋</p>
 		</div>
 		<div class="mx-auto lg:w-1/2 md:w-2/3">
 			<form id="contactForm">
@@ -438,7 +460,7 @@
 					<input type="hidden" id="date" value=""> <!-- Campo oculto para la fecha -->
 					<div class="w-full pt-8">
 						<button id="submitBtn" type="submit"
-							class="flex items-center py-2 pl-12 pr-8 mx-auto text-lg text-white transition duration-300 ease-in-out transform rounded-full cursor-pointer bg-blue focus:outline-none hover:scale-110 shadow-lg shadow-blue-500/50"> 
+							class="flex items-center py-2 pl-12 pr-8 mx-auto text-lg text-white transition duration-300 ease-in-out transform rounded-full cursor-pointer bg-blue focus:outline-none hover:scale-110 shadow-lg shadow-blue-500/50">
 							Enviar<img src="img/send.svg" alt="" class="ml-2">
 						</button>
 					</div>
@@ -451,13 +473,14 @@
 	<div class="lg:px-20 mt-24 m-auto max-w-screen-2xl">
 		<iframe class="lg:rounded-2xl"
 			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15598.015891450139!2d-76.9072116!3d-12.2141176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bc02a997134f%3A0x1c284c414001ba33!2sColegio%20Montessori%20-%20Jos%C3%A9%20G%C3%A1lvez!5e0!3m2!1ses-419!2spe!4v1716246266570!5m2!1ses-419!2spe"
-			loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación del Colegio Montessori en Google Maps">
+			loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+			title="Ubicación del Colegio Montessori en Google Maps">
 		</iframe>
 	</div>
 
 
 	<section class="">
-		
+
 
 		<div class="modal__container" id="modal-container">
 			<div class="modal__content">
@@ -465,85 +488,82 @@
 					<i class='bx bx-x'></i>
 				</div>
 
-			   
-			   
+				<div id="pdf-container"></div>
 				
-			   
-	<div id="pdf-container"></div>
-	<script>
-		const url = 'doc/boletin-2026.pdf';
+				<script>
+					const url = 'doc/boletin-2026.pdf';
 
-		pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+					pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
 
-		const container = document.getElementById('pdf-container');
+					const container = document.getElementById('pdf-container');
 
-		pdfjsLib.getDocument(url).promise.then(pdf => {
-			// Obtener y renderizar solo la primera página al principio
-			pdf.getPage(1).then(page => {
-				const viewport = page.getViewport({ scale: 1 });
-				const containerWidth = container.offsetWidth; // Ancho del contenedor
-				const scale = containerWidth / viewport.width; // Escala para ajustar al ancho
-				const outputScale = window.devicePixelRatio || 1; // Densidad de píxeles del dispositivo
+					pdfjsLib.getDocument(url).promise.then(pdf => {
+						// Obtener y renderizar solo la primera página al principio
+						pdf.getPage(1).then(page => {
+							const viewport = page.getViewport({ scale: 1 });
+							const containerWidth = container.offsetWidth; // Ancho del contenedor
+							const scale = containerWidth / viewport.width; // Escala para ajustar al ancho
+							const outputScale = window.devicePixelRatio || 1; // Densidad de píxeles del dispositivo
 
-				// Crear el canvas
-				const canvas = document.createElement('canvas');
-				const context = canvas.getContext('2d');
+							// Crear el canvas
+							const canvas = document.createElement('canvas');
+							const context = canvas.getContext('2d');
 
-				// Ajustar el tamaño del canvas para alta resolución
-				const scaledViewport = page.getViewport({ scale });
-				canvas.width = Math.floor(scaledViewport.width * outputScale);
-				canvas.height = Math.floor(scaledViewport.height * outputScale);
-				canvas.style.width = `${scaledViewport.width}px`;
-				canvas.style.height = `${scaledViewport.height}px`;
+							// Ajustar el tamaño del canvas para alta resolución
+							const scaledViewport = page.getViewport({ scale });
+							canvas.width = Math.floor(scaledViewport.width * outputScale);
+							canvas.height = Math.floor(scaledViewport.height * outputScale);
+							canvas.style.width = `${scaledViewport.width}px`;
+							canvas.style.height = `${scaledViewport.height}px`;
 
-				const renderContext = {
-					canvasContext: context,
-					viewport: scaledViewport,
-					transform: [outputScale, 0, 0, outputScale, 0, 0], // Renderización en alta densidad
-				};
+							const renderContext = {
+								canvasContext: context,
+								viewport: scaledViewport,
+								transform: [outputScale, 0, 0, outputScale, 0, 0], // Renderización en alta densidad
+							};
 
-				container.appendChild(canvas);
+							container.appendChild(canvas);
 
-				// Ajustar la altura dinámica del contenedor al canvas
-				container.style.height = `${scaledViewport.height}px`;
+							// Ajustar la altura dinámica del contenedor al canvas
+							container.style.height = `${scaledViewport.height}px`;
 
-				// Renderizar la primera página
-				page.render(renderContext);
-			});
+							// Renderizar la primera página
+							page.render(renderContext);
+						});
 
-			// Opcional: Renderizar páginas adicionales bajo demanda al hacer scroll
-			for (let i = 2; i <= pdf.numPages; i++) {
-				pdf.getPage(i).then(page => {
-					const viewport = page.getViewport({ scale: 1 });
-					const containerWidth = container.offsetWidth;
-					const scale = containerWidth / viewport.width;
-					const outputScale = window.devicePixelRatio || 1;
+						// Opcional: Renderizar páginas adicionales bajo demanda al hacer scroll
+						for (let i = 2; i <= pdf.numPages; i++) {
+							pdf.getPage(i).then(page => {
+								const viewport = page.getViewport({ scale: 1 });
+								const containerWidth = container.offsetWidth;
+								const scale = containerWidth / viewport.width;
+								const outputScale = window.devicePixelRatio || 1;
 
-					const canvas = document.createElement('canvas');
-					const context = canvas.getContext('2d');
+								const canvas = document.createElement('canvas');
+								const context = canvas.getContext('2d');
 
-					const scaledViewport = page.getViewport({ scale });
-					canvas.width = Math.floor(scaledViewport.width * outputScale);
-					canvas.height = Math.floor(scaledViewport.height * outputScale);
-					canvas.style.width = `${scaledViewport.width}px`;
-					canvas.style.height = `${scaledViewport.height}px`;
+								const scaledViewport = page.getViewport({ scale });
+								canvas.width = Math.floor(scaledViewport.width * outputScale);
+								canvas.height = Math.floor(scaledViewport.height * outputScale);
+								canvas.style.width = `${scaledViewport.width}px`;
+								canvas.style.height = `${scaledViewport.height}px`;
 
-					const renderContext = {
-						canvasContext: context,
-						viewport: scaledViewport,
-						transform: [outputScale, 0, 0, outputScale, 0, 0],
-					};
+								const renderContext = {
+									canvasContext: context,
+									viewport: scaledViewport,
+									transform: [outputScale, 0, 0, outputScale, 0, 0],
+								};
 
-					container.appendChild(canvas);
+								container.appendChild(canvas);
 
-					page.render(renderContext);
-				});
-			}
-		});
-	</script>
-			 
+								page.render(renderContext);
+							});
+						}
+					});
+				</script>
 
-				
+
+
 			</div>
 		</div>
 	</section>
@@ -593,43 +613,45 @@
 					</p>
 				</div>
 				<!-- Right section -->
-<div class="flex-1 flex justify-normal md:justify-end">
-  <div class="flex flex-col items-right md:items-end pl-[61px]" >
-    <p class="text-white mb-4">Síguenos</p>
-    <div class="flex space-x-4">
-      <a aria-label="Facebook del Colegio Montessori" href="https://www.facebook.com/montessori.pe" target="_blank"
-        class="w-12 h-12 rounded-full bg-gray-800 flex justify-center items-center">
-        <svg class="w-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor" viewBox="0 0 8 19">
-          <path fill-rule="evenodd"
-            d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-            clip-rule="evenodd" />
-        </svg>
-      </a>
-      <a aria-label="YouTube del Colegio Montessori"
-        href="https://www.youtube.com/channel/UCLvvicXahrHpHJhEkH_HXmQ" target="_blank"
-        class="w-12 h-12 rounded-full bg-gray-800 flex justify-center items-center">
-        <svg class="w-6 text-white" viewBox="0 0 16 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M13.9346 1.13529C14.5684 1.30645 15.0665 1.80588 15.2349 2.43896C15.5413 3.58788 15.5413 5.98654 15.5413 5.98654C15.5413 5.98654 15.5413 8.3852 15.2349 9.53412C15.0642 10.1695 14.5661 10.669 13.9346 10.8378C12.7886 11.1449 8.19058 11.1449 8.19058 11.1449C8.19058 11.1449 3.59491 11.1449 2.44657 10.8378C1.81277 10.6666 1.31461 10.1672 1.14622 9.53412C0.839844 8.3852 0.839844 5.98654 0.839844 5.98654C0.839844 5.98654 0.839844 3.58788 1.14622 2.43896C1.31695 1.80353 1.81511 1.30411 2.44657 1.13529C3.59491 0.828125 8.19058 0.828125 8.19058 0.828125C8.19058 0.828125 12.7886 0.828125 13.9346 1.13529ZM10.541 5.98654L6.72178 8.19762V3.77545L10.541 5.98654Z"
-            fill="currentColor" />
-        </svg>
-      </a>
-<a aria-label="Instagram del Colegio Montessori" href="https://www.instagram.com/montessori.pe" target="_blank"
-    class="w-12 h-12 rounded-full bg-gray-800 flex justify-center items-center">
-  <svg class="w-7 text-white pl-[2px]" viewBox="0 0 15 15" fill="none"
-    xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M4.70975 7.93663C4.70975 6.65824 5.76102 5.62163 7.0582 5.62163C8.35537 5.62163 9.40721 6.65824 9.40721 7.93663C9.40721 9.21502 8.35537 10.2516 7.0582 10.2516C5.76102 10.2516 4.70975 9.21502 4.70975 7.93663ZM3.43991 7.93663C3.43991 9.90608 5.05982 11.5025 7.0582 11.5025C9.05658 11.5025 10.6765 9.90608 10.6765 7.93663C10.6765 5.96719 9.05658 4.37074 7.0582 4.37074C5.05982 4.37074 3.43991 5.96719 3.43991 7.93663ZM9.97414 4.22935C9.97408 4.39417 10.0236 4.55531 10.1165 4.69239C10.2093 4.82946 10.3413 4.93633 10.4958 4.99946C10.6503 5.06259 10.8203 5.07916 10.9844 5.04707C11.1484 5.01498 11.2991 4.93568 11.4174 4.81918C11.5357 4.70268 11.6163 4.55423 11.649 4.39259C11.6817 4.23095 11.665 4.06339 11.6011 3.91109C11.5371 3.7588 11.4288 3.6286 11.2898 3.53698C11.1508 3.44536 10.9873 3.39642 10.8201 3.39635H10.8197C10.5955 3.39646 10.3806 3.48424 10.222 3.64043C10.0635 3.79661 9.97434 4.00843 9.97414 4.22935ZM4.21142 13.5892C3.52442 13.5584 3.15101 13.4456 2.90286 13.3504C2.57387 13.2241 2.33914 13.0738 2.09235 12.8309C1.84555 12.588 1.69278 12.3569 1.56527 12.0327C1.46854 11.7882 1.3541 11.4201 1.32287 10.7431C1.28871 10.0111 1.28189 9.79119 1.28189 7.93669C1.28189 6.08219 1.28927 5.86291 1.32287 5.1303C1.35416 4.45324 1.46944 4.08585 1.56527 3.84069C1.69335 3.51647 1.84589 3.28513 2.09235 3.04191C2.3388 2.79869 2.57331 2.64813 2.90286 2.52247C3.1509 2.42713 3.52442 2.31435 4.21142 2.28358C4.95417 2.24991 5.17729 2.24319 7.0582 2.24319C8.9391 2.24319 9.16244 2.25047 9.90582 2.28358C10.5928 2.31441 10.9656 2.42802 11.2144 2.52247C11.5434 2.64813 11.7781 2.79902 12.0249 3.04191C12.2717 3.2848 12.4239 3.51647 12.552 3.84069C12.6487 4.08513 12.7631 4.45324 12.7944 5.1303C12.8285 5.86291 12.8354 6.08219 12.8354 7.93669C12.8354 9.79119 12.8285 10.0105 12.7944 10.7431C12.7631 11.4201 12.6481 11.7881 12.552 12.0327C12.4239 12.3569 12.2714 12.5882 12.0249 12.8309C11.7784 13.0736 11.5434 13.2241 11.2144 13.3504C10.9663 13.4457 10.5928 13.5585 9.90582 13.5892C9.16306 13.6229 8.93994 13.6296 7.0582 13.6296C5.17645 13.6296 4.95395 13.6229 4.21142 13.5892Z"
-      fill="currentColor" />
-  </svg>
-</a>
-	  <img src="img/monkey.png" alt="" class="w-[100px] -mb-9">
-    </div>
-	
-  </div>
-</div>
+				<div class="flex-1 flex justify-normal md:justify-end">
+					<div class="flex flex-col items-right md:items-end pl-[61px]">
+						<p class="text-white mb-4">Síguenos</p>
+						<div class="flex space-x-4">
+							<a aria-label="Facebook del Colegio Montessori"
+								href="https://www.facebook.com/montessori.pe" target="_blank"
+								class="w-12 h-12 rounded-full bg-gray-800 flex justify-center items-center">
+								<svg class="w-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor" viewBox="0 0 8 19">
+									<path fill-rule="evenodd"
+										d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+										clip-rule="evenodd" />
+								</svg>
+							</a>
+							<a aria-label="YouTube del Colegio Montessori"
+								href="https://www.youtube.com/channel/UCLvvicXahrHpHJhEkH_HXmQ" target="_blank"
+								class="w-12 h-12 rounded-full bg-gray-800 flex justify-center items-center">
+								<svg class="w-6 text-white" viewBox="0 0 16 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M13.9346 1.13529C14.5684 1.30645 15.0665 1.80588 15.2349 2.43896C15.5413 3.58788 15.5413 5.98654 15.5413 5.98654C15.5413 5.98654 15.5413 8.3852 15.2349 9.53412C15.0642 10.1695 14.5661 10.669 13.9346 10.8378C12.7886 11.1449 8.19058 11.1449 8.19058 11.1449C8.19058 11.1449 3.59491 11.1449 2.44657 10.8378C1.81277 10.6666 1.31461 10.1672 1.14622 9.53412C0.839844 8.3852 0.839844 5.98654 0.839844 5.98654C0.839844 5.98654 0.839844 3.58788 1.14622 2.43896C1.31695 1.80353 1.81511 1.30411 2.44657 1.13529C3.59491 0.828125 8.19058 0.828125 8.19058 0.828125C8.19058 0.828125 12.7886 0.828125 13.9346 1.13529ZM10.541 5.98654L6.72178 8.19762V3.77545L10.541 5.98654Z"
+										fill="currentColor" />
+								</svg>
+							</a>
+							<a aria-label="Instagram del Colegio Montessori"
+								href="https://www.instagram.com/montessori.pe" target="_blank"
+								class="w-12 h-12 rounded-full bg-gray-800 flex justify-center items-center">
+								<svg class="w-7 text-white pl-[2px]" viewBox="0 0 15 15" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M4.70975 7.93663C4.70975 6.65824 5.76102 5.62163 7.0582 5.62163C8.35537 5.62163 9.40721 6.65824 9.40721 7.93663C9.40721 9.21502 8.35537 10.2516 7.0582 10.2516C5.76102 10.2516 4.70975 9.21502 4.70975 7.93663ZM3.43991 7.93663C3.43991 9.90608 5.05982 11.5025 7.0582 11.5025C9.05658 11.5025 10.6765 9.90608 10.6765 7.93663C10.6765 5.96719 9.05658 4.37074 7.0582 4.37074C5.05982 4.37074 3.43991 5.96719 3.43991 7.93663ZM9.97414 4.22935C9.97408 4.39417 10.0236 4.55531 10.1165 4.69239C10.2093 4.82946 10.3413 4.93633 10.4958 4.99946C10.6503 5.06259 10.8203 5.07916 10.9844 5.04707C11.1484 5.01498 11.2991 4.93568 11.4174 4.81918C11.5357 4.70268 11.6163 4.55423 11.649 4.39259C11.6817 4.23095 11.665 4.06339 11.6011 3.91109C11.5371 3.7588 11.4288 3.6286 11.2898 3.53698C11.1508 3.44536 10.9873 3.39642 10.8201 3.39635H10.8197C10.5955 3.39646 10.3806 3.48424 10.222 3.64043C10.0635 3.79661 9.97434 4.00843 9.97414 4.22935ZM4.21142 13.5892C3.52442 13.5584 3.15101 13.4456 2.90286 13.3504C2.57387 13.2241 2.33914 13.0738 2.09235 12.8309C1.84555 12.588 1.69278 12.3569 1.56527 12.0327C1.46854 11.7882 1.3541 11.4201 1.32287 10.7431C1.28871 10.0111 1.28189 9.79119 1.28189 7.93669C1.28189 6.08219 1.28927 5.86291 1.32287 5.1303C1.35416 4.45324 1.46944 4.08585 1.56527 3.84069C1.69335 3.51647 1.84589 3.28513 2.09235 3.04191C2.3388 2.79869 2.57331 2.64813 2.90286 2.52247C3.1509 2.42713 3.52442 2.31435 4.21142 2.28358C4.95417 2.24991 5.17729 2.24319 7.0582 2.24319C8.9391 2.24319 9.16244 2.25047 9.90582 2.28358C10.5928 2.31441 10.9656 2.42802 11.2144 2.52247C11.5434 2.64813 11.7781 2.79902 12.0249 3.04191C12.2717 3.2848 12.4239 3.51647 12.552 3.84069C12.6487 4.08513 12.7631 4.45324 12.7944 5.1303C12.8285 5.86291 12.8354 6.08219 12.8354 7.93669C12.8354 9.79119 12.8285 10.0105 12.7944 10.7431C12.7631 11.4201 12.6481 11.7881 12.552 12.0327C12.4239 12.3569 12.2714 12.5882 12.0249 12.8309C11.7784 13.0736 11.5434 13.2241 11.2144 13.3504C10.9663 13.4457 10.5928 13.5585 9.90582 13.5892C9.16306 13.6229 8.93994 13.6296 7.0582 13.6296C5.17645 13.6296 4.95395 13.6229 4.21142 13.5892Z"
+										fill="currentColor" />
+								</svg>
+							</a>
+							<img src="img/monkey.png" alt="" class="w-[100px] -mb-9">
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Copyright -->
@@ -638,10 +660,11 @@
 			<span>2026 Colegio Montessori S.A.C. Hecho con ❤️️ en Perú</span>
 		</div>
 	</footer>
-	
+
 	<!-- Whatsapp -->
 	<div id="whatsapp" style="display: none;">
-		<a href="https://wa.me/51969300651?text=Hola,%20me%20gustaría%20obtener%20más%20información" target="_blank" class="wtsapp">
+		<a href="https://wa.me/51969300651?text=Hola,%20me%20gustaría%20obtener%20más%20información" target="_blank"
+			class="wtsapp">
 			<img src="img/whatsapp.svg" alt="whatsapp">
 		</a>
 	</div>
@@ -658,8 +681,8 @@
 	<script src="js/form.js"></script>
 	<script src="js/pdf.js"></script>
 
-	
-	
+
+
 
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
