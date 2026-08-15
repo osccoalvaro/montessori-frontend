@@ -1,0 +1,97 @@
+.input-container {
+  position: relative;
+  margin: 0.5rem 0;
+  padding: 0 10px;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #E2E8F0;
+  background: none;
+  padding: 0.6rem 1.8rem;
+  color: #494949;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+  height: 50px;
+  background-color: #F8FAFC;
+}
+
+.input-container select {
+  appearance: none;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 36px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #494949;
+  font-size: 17px;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 31px;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 7px;
+  background-color: #FFFFFF;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 50%;
+}
+
+.input-container span:after {
+  right: 50%;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 33px;
+  font-size: 14px;
+  color: #0364FF;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+.input:focus {
+  background-color: #FFFFFF;
+  border-color: #0364FF;
+  box-shadow: 0 0 0 2px rgba(3, 100, 255, 0.3);
+}
