@@ -10,7 +10,7 @@ const submitBtn = document.getElementById('submitBtn');
 contactForm.addEventListener('submit', async e => {
   e.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
 
-  // Deshabilitar el botón
+  // Deshabilitar botón
   submitBtn.disabled = true;
   submitBtn.classList.remove("bg-blue", "hover:scale-110", "cursor-pointer", "shadow-blue-500/50");
   submitBtn.classList.add("bg-blue-disabled", "shadow-blue-500/20");
