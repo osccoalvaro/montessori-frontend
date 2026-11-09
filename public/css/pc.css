@@ -1,0 +1,165 @@
+
+
+.conectados-section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.conectados-titulo {
+    margin-top: 6rem;
+    font-size: 45px; /* Tamaño por defecto en desktop */
+    text-align: center;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    color: #666666;
+    font-weight: bold;
+}
+
+.conectados-contenedor {
+    display: flex;
+    flex-direction: row; /* Por defecto en desktop */
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.conectados-imagen-wrapper {
+    width: 65%; /* md:w-7/12 equivalente */
+    margin-bottom: 0;
+}
+
+.conectados-imagen {
+    width: 100%;
+    height: auto;
+   
+}
+
+.conectados-info {
+    width: 35%; /* md:w-5/12 equivalente */
+    text-align: left;
+}
+
+.conectados-subtitulo {
+    font-size: 33px; /* Tamaño por defecto en desktop */
+    font-weight: bold;
+    color: #666666;
+    margin-bottom: 2rem;
+    width: 350px;
+    line-height: 1.3;
+}
+
+.conectados-lista {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.conectados-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 1.125rem;
+    color: #666666;
+}
+
+.conectados-item svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
+.conectados-check {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.conectados-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem 0 2.25rem;
+    margin: 0; /* Por defecto en desktop */
+    font-size: 1.125rem;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid var(--border-blue, #1d7bff);
+    border-radius: 9999px;
+    color: var(--text-blue, #1d7bff);
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.conectados-btn:hover {
+    transform: scale(1.1);
+}
+
+.conectados-icono-btn {
+    margin-top: -0.25rem;
+    margin-bottom: -0.25rem;
+    margin-left: -0.25rem;
+    width: 3.5rem;
+}
+
+
+
+@media (max-width: 1023px) {
+    .conectados-titulo {
+        font-size: 2.25rem; /* 36px para pantallas medianas/tablets */
+    }
+    
+    .conectados-imagen {
+        margin-left: 0; /* Se quita el margen negativo en pantallas menores a lg */
+    }
+}
+
+@media (max-width: 767px) {
+    .conectados-item {
+
+    font-size: 18px;
+
+}
+
+
+
+    .conectados-titulo {
+        font-size: 2rem; /* 32px específico para móviles */
+        margin-top: 4rem;
+    }
+
+    .conectados-contenedor {
+        flex-direction: column; /* Apila la imagen y el texto en móvil */
+        margin-top: 2.5rem;
+    }
+
+    .conectados-imagen-wrapper {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .conectados-info {
+        width: 100%;
+        text-align: center; /* Centrado en móviles */
+    }
+
+    /* 👇 AGREGAR ESTO PARA OCULTARLO EN CELULARES 👇 */
+    .conectados-subtitulo {
+        display: none; 
+    }
+
+    .conectados-lista {
+        text-align: left; /* Mantiene la lista alineada a la izquierda para legibilidad */
+            margin: 0 0 2rem 10px;
+    }
+
+    .conectados-btn {
+        margin: 0 auto; /* Centra el botón en móviles */
+    }
+}

@@ -1,0 +1,177 @@
+/* =========================================
+   SECCIÓN DIGITALIZACIÓN
+   ========================================= */
+
+.digitalizacion-section {
+    width: 100%;
+    padding: 35px 0 0;
+    background: #ffffff;
+}
+
+.digitalizacion-contenedor {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.digitalizacion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* =========================================
+   BLOQUES
+   ========================================= */
+
+.digitalizacion-item {
+    min-height: 245px;
+    padding: 35px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    text-align: center;
+
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+/* Última columna */
+.digitalizacion-item:nth-child(3n) {
+    border-right: none;
+}
+
+/* Última fila */
+.digitalizacion-item:nth-child(n + 4) {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   ICONOS
+   ========================================= */
+
+.digitalizacion-icono {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 14px;
+}
+
+.digitalizacion-icono img {
+    display: block;
+    width: 60px;
+    height: auto;
+}
+
+
+/* =========================================
+   TEXTOS
+   ========================================= */
+
+.digitalizacion-item h3 {
+    margin: 0 0 8px;
+
+    font-size: 17px;
+    line-height: 1.2;
+
+    color: #737373;
+}
+
+.digitalizacion-item p {
+    max-width: 220px;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.3;
+
+    color: #777777;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .digitalizacion-item {
+        min-height: 220px;
+        padding: 28px 15px;
+    }
+
+}
+
+
+/* =========================================
+   MÓVIL
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .digitalizacion-section {
+        padding-top: 25px;
+    }
+
+    .digitalizacion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .digitalizacion-item {
+        min-height: 200px;
+        padding: 25px 5px;
+
+        border-right: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+    }
+
+
+    /* Columna izquierda */
+    .digitalizacion-item:nth-child(odd) {
+        border-right: 1px solid #e4e4e4;
+    }
+
+    /* Columna derecha */
+    .digitalizacion-item:nth-child(even) {
+        border-right: none;
+    }
+
+
+    /* Primeras dos filas */
+    .digitalizacion-item:nth-child(-n + 4) {
+        border-bottom: 1px solid #e4e4e4;
+    }
+
+    /* Última fila */
+    .digitalizacion-item:nth-child(n + 5) {
+        border-bottom: none;
+    }
+
+
+    /* Texto */
+    .digitalizacion-item p {
+        max-width: 145px;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+
+    /* Iconos */
+    .digitalizacion-icono {
+        width: 55px;
+        height: 55px;
+    }
+
+    .digitalizacion-icono img {
+        width: 50px;
+    }
+
+}
+

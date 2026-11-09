@@ -1,0 +1,147 @@
+    #tab-nivel-image {
+        display: block;
+        width: 230px;
+    }
+
+    .nivel-section {
+        max-width: 1180px;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 50px 80px;
+        background:
+            linear-gradient(to bottom right, #fffdfb 0, #f5faff 50%) 100% 100% / 50% 50% no-repeat,
+            linear-gradient(to bottom left, #fffdfb 0, #f5faff 50%) 0 100% / 50% 50% no-repeat,
+            linear-gradient(to top left, #fffdfb 0, #f5faff 50%) 0 0 / 50% 50% no-repeat,
+            linear-gradient(to top right, #fffdfb 0, #f5faff 50%) 100% 0 / 50% 50% no-repeat;
+        border-radius: 30px;
+    }
+
+    .nivel-texto h2 {
+        margin: 20px 0 0;
+        color: #1E293B;
+        font-size: 36px;
+        line-height: 2.5rem;
+        font-weight: 700;
+    }
+
+    .nivel-texto p {
+        max-width: 380px;
+        margin: 1.25rem 0;
+        color: #646565;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        padding-right: 2.5rem;
+    }
+
+
+    /* =========================================
+    ANIMACIÓN DEL TEXTO
+    ========================================= */
+    .tab-fade {
+        opacity: 1;
+        transition: opacity 0.25s ease;
+    }
+
+    .tab-fade.fade-out {
+        opacity: 0;
+    }
+    /* =========================================
+    CONTENEDOR DE TABS
+    ========================================= */
+
+    .tabs-wrapper {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* =========================================
+    BOTONES
+    ========================================= */
+
+    .tab-btn {
+        flex: 1;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #E5E7EA;
+        border-radius: 50px;
+        color: #646565;
+    }
+
+    .tab-btn.active {
+        background: radial-gradient(124.7% 111.02% at 0 0,
+                #75aeff 0,
+                #1d7bff 100%);
+        box-shadow: inset -.02rem -.04rem .12rem 0 hsla(0, 0%, 100%, .5);
+        border-color: #F8FAFC;
+        color: #fff;
+    }
+
+    .nivel-contenido {
+        display: flex;
+    }
+
+    .nivel-texto {
+        width: 40%;
+        text-align: left;
+    }
+
+    .nivel-galeria {
+        width: 60%;
+    }
+
+    .tab-name {
+        font-size: 20px;
+    }
+
+    /* Móvil */
+    @media (max-width: 767px) {
+
+        .nivel-contenido {
+            flex-direction: column;
+        }
+
+        #tab-nivel-image {
+            display: none;
+        }
+
+        .nivel-section {
+            padding: 35px 10px;
+            border-radius: 0;
+        }
+
+        .nivel-texto {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nivel-galeria {
+            width: 100%;
+        }
+
+        .tabs-wrapper {
+            gap: 0.5rem;
+        }
+
+        .tab-btn {
+            height: 3rem;
+        }
+
+        .nivel-texto h2 {
+            margin: 0;
+            font-size: 30px;
+            line-height: 1rem;
+        }
+
+        .nivel-texto p {
+            font-size: 18px;
+            line-height: 1.5rem;
+            padding: 0 20px;
+        }
+
+        .tab-name {
+            font-size: 18px;
+        }
+    }
