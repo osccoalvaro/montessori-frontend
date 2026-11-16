@@ -98,7 +98,6 @@
 
     /* Móvil */
     @media (max-width: 767px) {
-
         .nivel-contenido {
             flex-direction: column;
         }

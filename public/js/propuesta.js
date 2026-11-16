@@ -21,14 +21,19 @@ const tabsData = [
 
         features: [
             {
-                icon: "img/ludico.svg",
+                icon: "img/aprendizaje.svg",
                 title: "Aprendizaje lúdico",
                 description: "Actividades lúdicas que favorecen el aprendizaje."
             },
             {
-                icon: "img/comunicacion.svg",
+                icon: "img/pizarra.svg",
                 title: "Habilidades",
                 description: "Desarrollo comunicativo, matemático y en inglés."
+            },
+            {
+                icon: "img/ingles.svg",
+                title: "Inglés",
+                description: "Experiencias dinámicas para aprender inglés."
             },
             {
                 icon: "img/auxiliar.svg",
@@ -41,12 +46,7 @@ const tabsData = [
                 description: "Acompañamiento de un Departamento de Psicología."
             },
             {
-                icon: "img/ingles.svg",
-                title: "Inglés",
-                description: "Experiencias dinámicas para aprender inglés."
-            },
-            {
-                icon: "img/facil-usar.svg",
+                icon: "img/autonomia.svg",
                 title: "Autonomía",
                 description: "Fomentamos autonomía, seguridad y convivencia."
             }
@@ -74,24 +74,14 @@ const tabsData = [
 
   features: [
     {
-        icon: "img/ludico.svg",
+        icon: "img/aprendizaje.svg",
         title: "Lectura y matemática",
         description: "Aprendizaje integral con énfasis en lectura y matemáticas."
     },
     {
-        icon: "img/auxiliar.svg",
-        title: "Trabajo colaborativo",
-        description: "Desarrollamos comunicación, responsabilidad y respeto."
-    },
-    {
-        icon: "img/kinder.svg",
+        icon: "img/pizarra.svg",
         title: "Aulas interactivas",
         description: "Clases más dinámicas, visuales e interactivas."
-    },
-    {
-        icon: "img/alivio.svg",
-        title: "Soporte emocional",
-        description: "Acompañamiento de un Departamento de Psicología."
     },
     {
         icon: "img/ingles.svg",
@@ -99,7 +89,17 @@ const tabsData = [
         description: "Fortalecemos progresivamente las habilidades en inglés."
     },
     {
-        icon: "img/facil-usar.svg",
+        icon: "img/proyecto.svg",
+        title: "Trabajo colaborativo",
+        description: "Desarrollamos comunicación, responsabilidad y respeto."
+    },
+    {
+        icon: "img/alivio.svg",
+        title: "Soporte emocional",
+        description: "Acompañamiento de un Departamento de Psicología."
+    },
+    {
+        icon: "img/autonomia.svg",
         title: "Autonomía",
         description: "Fomentamos responsabilidad, confianza y autonomía."
     }
@@ -127,14 +127,19 @@ const tabsData = [
 
        features: [
     {
-        icon: "img/check.svg",
+        icon: "img/pensamiento.svg",
         title: "Pensamiento crítico",
-        description: "Fortalecemos comprensión lectora y razonamiento matemático."
+        description: "Fortalecemos la lectura y razonamiento matemático."
     },
     {
         icon: "img/proyecto.svg",
         title: "Proyectos",
-        description: "Desarrollamos investigación, argumentación y trabajo en equipo."
+        description: "Desarrollamos investigación, análisis y trabajo en equipo."
+    },
+    {
+        icon: "img/ingles.svg",
+        title: "Inglés",
+        description: "Desarrollamos competencias comunicativas en inglés."
     },
     {
         icon: "img/universidad.svg",
@@ -145,11 +150,6 @@ const tabsData = [
         icon: "img/alivio.svg",
         title: "Soporte emocional",
         description: "Acompañamiento de un Departamento de Psicología."
-    },
-    {
-        icon: "img/ingles.svg",
-        title: "Inglés",
-        description: "Desarrollamos competencias comunicativas en inglés."
     },
     {
         icon: "img/proyeccion.svg",

@@ -13,17 +13,15 @@
 	<link href="./css/output.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/review.css">
-	<link rel="stylesheet" href="css/haru.css">
-	<link rel="stylesheet" href="css/tarjeta.css">
-	<link rel="stylesheet" href="css/propuesta.css">
-	<link rel="stylesheet" href="css/digitalizacion.css">
-	<link rel="stylesheet" href="css/pc.css">
+	<link rel="stylesheet" href="css/nivel-propuesta.css">
+	<link rel="stylesheet" href="css/nivel-acordeon.css">
+	<link rel="stylesheet" href="css/nivel-detalle.css">
+	<link rel="stylesheet" href="css/smiledu.css">
 	<link rel="stylesheet" href="css/collage.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/whatsapp.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-
 	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="https://montessori.pe">
 	<meta property="og:type" content="website">
@@ -38,11 +36,8 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'G-W9LEWQR1WS');
 	</script>
-
-
 </head>
 
 <body class="antialiased">
@@ -124,308 +119,148 @@
 	<!-- Brindado por profesionales de las mejores universidades e institutos del Perú -->
 	<div class="mt-24 m-auto lg:px-12 max-w-screen-xl">
 		<div class="flex justify-center">
-			<p class="mb-8 text-gray text-center text-lg lg:text-2xl max-w-96 lg:max-w-none">Brindado por profesionales
-				de las mejores universidades e institutos del Perú</p>
+			<p class="mb-8 text-gray text-center text-lg lg:text-2xl max-w-96 lg:max-w-none">Brindado por profesionales de las mejores universidades e institutos del Perú</p>
 		</div>
 		<!-- Infinite horizontal scroll animation -->
 		<div
 			class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
 			<ul
 				class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-				<li><img src="img/universidad-san-marcos.svg" alt="Universidad Nacional Mayor de San Marcos" /></li>
-				<li><img src="img/universidad-federico-villarreal.svg" alt="Universidad Nacional Federico Villarreal" />
-				</li>
-				<li><img src="img/universidad-enrique-guzman-y-valle.svg"
-						alt="Universidad Nacional de Educación Enrique Guzmán y Valle" /></li>
-				<li><img src="img/universidad-san-marcos.svg" alt="Universidad Nacional Mayor de San Marcos" /></li>
-				<li><img src="img/universidad-federico-villarreal.svg" alt="Universidad Nacional Federico Villarreal" />
-				</li>
-				<li><img src="img/universidad-enrique-guzman-y-valle.svg"
-						alt="Universidad Nacional de Educación Enrique Guzmán y Valle" /></li>
+				<li><img src="img/universidad-san-marcos.svg" alt="Universidad Nacional Mayor de San Marcos"/></li>
+				<li><img src="img/universidad-federico-villarreal.svg" alt="Universidad Nacional Federico Villarreal"/></li>
+				<li><img src="img/universidad-enrique-guzman-y-valle.svg" alt="Universidad Nacional de Educación Enrique Guzmán y Valle"/></li>
+				<li><img src="img/universidad-san-marcos.svg" alt="Universidad Nacional Mayor de San Marcos"/></li>
+				<li><img src="img/universidad-federico-villarreal.svg" alt="Universidad Nacional Federico Villarreal"/></li>
+				<li><img src="img/universidad-enrique-guzman-y-valle.svg" alt="Universidad Nacional de Educación Enrique Guzmán y Valle"/></li>
 			</ul>
-			<ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-				aria-hidden="true">
-				<li><img src="img/universidad-san-marcos.svg" alt="Universidad Nacional Mayor de San Marcos" /></li>
-				<li><img src="img/universidad-federico-villarreal.svg" alt="Universidad Nacional Federico Villarreal" />
-				</li>
-				<li><img src="img/universidad-enrique-guzman-y-valle.svg"
-						alt="Universidad Nacional de Educación Enrique Guzmán y Valle" /></li>
-				<li><img src="img/universidad-san-marcos.svg" alt="Universidad Nacional Mayor de San Marcos" /></li>
-				<li><img src="img/universidad-federico-villarreal.svg" alt="Universidad Nacional Federico Villarreal" />
-				</li>
-				<li><img src="img/universidad-enrique-guzman-y-valle.svg"
-						alt="Universidad Nacional de Educación Enrique Guzmán y Valle" /></li>
+			<ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+				<li><img src="img/universidad-san-marcos.svg" alt="Universidad Nacional Mayor de San Marcos"/></li>
+				<li><img src="img/universidad-federico-villarreal.svg" alt="Universidad Nacional Federico Villarreal"/></li>
+				<li><img src="img/universidad-enrique-guzman-y-valle.svg" alt="Universidad Nacional de Educación Enrique Guzmán y Valle"/></li>
+				<li><img src="img/universidad-san-marcos.svg" alt="Universidad Nacional Mayor de San Marcos"/></li>
+				<li><img src="img/universidad-federico-villarreal.svg" alt="Universidad Nacional Federico Villarreal"/></li>
+				<li><img src="img/universidad-enrique-guzman-y-valle.svg"alt="Universidad Nacional de Educación Enrique Guzmán y Valle"/></li>
 			</ul>
 		</div>
 	</div>
 
-
-
-<section class="nivel-section">
-
-    <!-- ======== ÁREA DE CONTENIDO DINÁMICO ======== -->
-    <div class="nivel-contenido">
-
-        <!-- Texto -->
-        <div class="nivel-texto" data-aos="fade-right">
-
-            <div id="tab-text-container" class="tab-fade">
-
-                <h2 id="tab-title">Inicial</h2>
-
-                <p id="tab-description">
-                    Un espacio seguro para aprender, explorar y crecer con propósito desde el inicio de su etapa escolar.
-                </p>
-
-                <img id="tab-nivel-image"
-                     src="img/monoinicial.png"
-                     alt="Inicial">
-
-            </div>
-
-        </div>
-
-
-        <!-- BENTO / GALERÍA -->
-        <div class="nivel-galeria">
-
-            <div id="options-container" class="options"></div>
-
-            <div class="tabs-wrapper">
-
-                <button type="button" class="tab-btn active">
-                    <span class="tab-name">Inicial</span>
-                </button>
-
-                <button type="button" class="tab-btn">
-                    <span class="tab-name">Primaria</span>
-                </button>
-
-                <button type="button" class="tab-btn">
-                    <span class="tab-name">Secundaria</span>
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     CARACTERÍSTICAS DEL NIVEL
-     ========================================= -->
-
-	 
-<section class="digitalizacion-section">
-
-    <div class="digitalizacion-contenedor">
-
-        <div class="digitalizacion-grid">
-
-            <!-- 1 -->
-            <div class="digitalizacion-item">
-
-                <div class="digitalizacion-icono">
-                    <img id="digitalizacion-icono-1"
-                         src="img/ludico.svg"
-                         alt="Aprendizaje lúdico">
-                </div>
-
-                <h3 id="digitalizacion-titulo-1">
-                    Aprendizaje lúdico
-                </h3>
-
-                <p id="digitalizacion-descripcion-1">
-                    Actividades lúdicas que favorecen el aprendizaje.
-                </p>
-
-            </div>
-
-
-            <!-- 2 -->
-            <div class="digitalizacion-item">
-
-                <div class="digitalizacion-icono">
-                    <img id="digitalizacion-icono-2"
-                         src="img/comunicacion.svg"
-                         alt="Habilidades">
-                </div>
-
-                <h3 id="digitalizacion-titulo-2">
-                    Habilidades
-                </h3>
-
-                <p id="digitalizacion-descripcion-2">
-                    Desarrollo comunicativo, matemático y en inglés.
-                </p>
-
-            </div>
-
-
-            <!-- 3 -->
-            <div class="digitalizacion-item">
-
-                <div class="digitalizacion-icono">
-                    <img id="digitalizacion-icono-3"
-                         src="img/auxiliar.svg"
-                         alt="Auxiliar en aula">
-                </div>
-
-                <h3 id="digitalizacion-titulo-3">
-                    Auxiliar en aula
-                </h3>
-
-                <p id="digitalizacion-descripcion-3">
-                    Apoyo para actividades complementarias.
-                </p>
-
-            </div>
-
-
-            <!-- 4 -->
-            <div class="digitalizacion-item">
-
-                <div class="digitalizacion-icono">
-                    <img id="digitalizacion-icono-4"
-                         src="img/alivio.svg"
-                         alt="Soporte emocional">
-                </div>
-
-                <h3 id="digitalizacion-titulo-4">
-                    Soporte emocional
-                </h3>
-
-                <p id="digitalizacion-descripcion-4">
-                    Acompañamiento de un Departamento de Psicología.
-                </p>
-
-            </div>
-
-
-            <!-- 5 -->
-            <div class="digitalizacion-item">
-
-                <div class="digitalizacion-icono">
-                    <img id="digitalizacion-icono-5"
-                         src="img/ingles.svg"
-                         alt="Inglés">
-                </div>
-
-                <h3 id="digitalizacion-titulo-5">
-                    Inglés
-                </h3>
-
-                <p id="digitalizacion-descripcion-5">
-                    Experiencias dinámicas para aprender inglés.
-                </p>
-
-            </div>
-
-
-            <!-- 6 -->
-            <div class="digitalizacion-item">
-
-                <div class="digitalizacion-icono">
-                    <img id="digitalizacion-icono-6"
-                         src="img/facil-usar.svg"
-                         alt="Autonomía">
-                </div>
-
-                <h3 id="digitalizacion-titulo-6">
-                    Autonomía
-                </h3>
-
-                <p id="digitalizacion-descripcion-6">
-                    Fomentamos autonomía, seguridad y convivencia.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-	<section class="conectados-section">
-			<!-- Título principal -->
-			<h2 class="conectados-titulo">
-				Conectados con el aprendizaje de tus hijos 
-			</h2>
-
-			<div class="conectados-contenedor">
-
-
-				<!-- Contenido y Lista con Checks -->
-				<div class="conectados-info">
-					<h3 class="conectados-subtitulo">
-						Acompaña su progreso en tiempo real ✨
-					</h3>
-
-
-					<!-- Lista de beneficios con checks -->
-					<ul class="conectados-lista">
-						<li class="conectados-item">
-							<svg class="conectados-check" width="20.23" height="20.23" viewBox="0 0 20.23 20.23">
-								<circle cx="10.12" cy="10.12" r="10" fill="none" />
-								<circle cx="10.12" cy="10.12" r="9.62" fill="none" stroke="#0364FB"
-									stroke-miterlimit="3.08" />
-								<path d="M4.4,11.89s1.32,1.26,1.71,1.57c.81.67,1.97.67,2.78,0,1.21-.96,7.03-7,7.03-7"
-									fill="none" stroke="#0364FB" stroke-linecap="round" stroke-miterlimit="3.08" />
-							</svg>
-
-							<span>Monitorea la asistencia de tu hijo.</span>
-						</li>
-						<li class="conectados-item">
-							<svg class="conectados-check" width="20.23" height="20.23" viewBox="0 0 20.23 20.23">
-								<circle cx="10.12" cy="10.12" r="10" fill="none" />
-								<circle cx="10.12" cy="10.12" r="9.62" fill="none" stroke="#0364FB"
-									stroke-miterlimit="3.08" />
-								<path d="M4.4,11.89s1.32,1.26,1.71,1.57c.81.67,1.97.67,2.78,0,1.21-.96,7.03-7,7.03-7"
-									fill="none" stroke="#0364FB" stroke-linecap="round" stroke-miterlimit="3.08" />
-							</svg>
-
-							<span>Consulta sus calificaciones y avance.</span>
-						</li>
-						<li class="conectados-item">
-							<svg class="conectados-check" width="20.23" height="20.23" viewBox="0 0 20.23 20.23">
-								<circle cx="10.12" cy="10.12" r="10" fill="none" />
-								<circle cx="10.12" cy="10.12" r="9.62" fill="none" stroke="#0364FB"
-									stroke-miterlimit="3.08" />
-								<path d="M4.4,11.89s1.32,1.26,1.71,1.57c.81.67,1.97.67,2.78,0,1.21-.96,7.03-7,7.03-7"
-									fill="none" stroke="#0364FB" stroke-linecap="round" stroke-miterlimit="3.08" />
-							</svg>
-
-
-							<span>Entérate de noticias y comunicados.</span>
-						</li>
-						<li class="conectados-item">
-							<svg class="conectados-check" width="20.23" height="20.23" viewBox="0 0 20.23 20.23">
-								<circle cx="10.12" cy="10.12" r="10" fill="none" />
-								<circle cx="10.12" cy="10.12" r="9.62" fill="none" stroke="#0364FB"
-									stroke-miterlimit="3.08" />
-								<path d="M4.4,11.89s1.32,1.26,1.71,1.57c.81.67,1.97.67,2.78,0,1.21-.96,7.03-7,7.03-7"
-									fill="none" stroke="#0364FB" stroke-linecap="round" stroke-miterlimit="3.08" />
-							</svg>
-
-							<span>Comunícate con docentes y el colegio.</span>
-						</li>
-					</ul>
-
-				</div>
-
-				<!-- Imagen -->
-				<div class="conectados-imagen-wrapper">
-					<img class="conectados-imagen" src="img/smiledu-montessori.png" alt="Plataforma académica">
+	<!-- Sección Nivel -->
+	<section class="nivel-section">
+		<div class="nivel-contenido">
+			<div class="nivel-texto" data-aos="fade-right">
+				<div id="tab-text-container" class="tab-fade">
+					<h2 id="tab-title">Inicial</h2>
+					<p id="tab-description">Un espacio seguro para aprender, explorar y crecer con propósito desde el inicio de su etapa escolar.</p>
+					<img id="tab-nivel-image" src="img/monoinicial.png" alt="Mascota">
 				</div>
 			</div>
-		</section>
+			<div class="nivel-galeria">
+				<div id="options-container" class="options"></div>
+				<div class="tabs-wrapper">
+					<button type="button" class="tab-btn active">
+						<span class="tab-name">Inicial</span>
+					</button>
+					<button type="button" class="tab-btn">
+						<span class="tab-name">Primaria</span>
+					</button>
+					<button type="button" class="tab-btn">
+						<span class="tab-name">Secundaria</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
 
-		
+	<!-- Sección Nivel Detalle -->
+	<section class="digitalizacion-section">
+		<div class="digitalizacion-contenedor">
+			<div class="digitalizacion-grid">
+				<!-- 1 -->
+				<div class="digitalizacion-item">
+					<div class="digitalizacion-icono">
+						<img id="digitalizacion-icono-1" src="img/aprendizaje.svg" alt="Aprendizaje lúdico">
+					</div>
+					<h3 id="digitalizacion-titulo-1">Aprendizaje lúdico</h3>
+					<p id="digitalizacion-descripcion-1">Actividades lúdicas que favorecen el aprendizaje.</p>
+				</div>
+				<!-- 2 -->
+				<div class="digitalizacion-item">
+					<div class="digitalizacion-icono">
+						<img id="digitalizacion-icono-2" src="img/pizarra.svg" alt="Habilidades">
+					</div>
+					<h3 id="digitalizacion-titulo-2">Habilidades</h3>
+					<p id="digitalizacion-descripcion-2">Desarrollo comunicativo, matemático y en inglés.</p>
+				</div>
+				<!-- 3 -->
+				<div class="digitalizacion-item">
+					<div class="digitalizacion-icono">
+						<img id="digitalizacion-icono-3" src="img/ingles.svg" alt="Inglés">
+					</div>
+					<h3 id="digitalizacion-titulo-3">Inglés</h3>
+					<p id="digitalizacion-descripcion-3">Experiencias dinámicas para aprender inglés.</p>
+				</div>
+				<!-- 4 -->
+				<div class="digitalizacion-item">
+					<div class="digitalizacion-icono">
+						<img id="digitalizacion-icono-4" src="img/auxiliar.svg" alt="Auxiliar en aula">
+					</div>
+					<h3 id="digitalizacion-titulo-4">Auxiliar en aula</h3>
+					<p id="digitalizacion-descripcion-4">Apoyo para actividades complementarias.</p>
+				</div>
+				<!-- 5 -->
+				<div class="digitalizacion-item">
+					<div class="digitalizacion-icono">
+						<img id="digitalizacion-icono-5" src="img/alivio.svg" alt="Soporte emocional">
+					</div>
+					<h3 id="digitalizacion-titulo-5">Soporte emocional</h3>
+					<p id="digitalizacion-descripcion-5">Acompañamiento de un Departamento de Psicología.</p>
+				</div>
+				<!-- 6 -->
+				<div class="digitalizacion-item">
+					<div class="digitalizacion-icono">
+						<img id="digitalizacion-icono-6" src="img/autonomia.svg" alt="Autonomía">
+					</div>
+					<h3 id="digitalizacion-titulo-6">Autonomía</h3>
+					<p id="digitalizacion-descripcion-6">Fomentamos autonomía, seguridad y convivencia.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección Smiledu -->
+	<section class="conectados-section">
+		<h2 class="conectados-titulo">Conectados con el aprendizaje de tus hijos</h2>
+		<div class="conectados-contenedor">
+			<!-- Contenido y Lista con Checks -->
+			<div class="conectados-info">
+				<h3 class="conectados-subtitulo">
+					Acompaña su progreso en tiempo real ✨
+				</h3>
+				<!-- Lista de beneficios con checks -->
+				<ul class="conectados-lista">
+					<li>
+						<img src="img/check.svg" alt="Check">
+						<span>Monitorea la asistencia de tu hijo.</span>
+					</li>
+					<li>
+						<img src="img/check.svg" alt="Check">
+						<span>Consulta sus calificaciones y avance.</span>
+					</li>
+					<li>
+						<img src="img/check.svg" alt="Check">
+						<span>Entérate de noticias y comunicados.</span>
+					</li>
+					<li>
+						<img src="img/check.svg" alt="Check">
+						<span>Comunícate con docentes y el colegio.</span>
+					</li>
+				</ul>
+			</div>
+			<div class="conectados-imagen-wrapper">
+				<img class="conectados-imagen" src="img/smiledu-montessori.png" alt="Plataforma Educativa">
+			</div>
+		</div>
+	</section>
 
 	<!-- Padres de familia que confían en nosotros -->
 	<div class="mt-24 max-w-full bg-blanco pt-32 pb-24">
@@ -763,7 +598,7 @@
 										fill="currentColor" />
 								</svg>
 							</a>
-							<img src="img/monkey.png" alt="" class="w-[100px] -mb-9">
+							<img src="img/monkey11.webp" alt="" class="w-[100px] -mb-9">
 						</div>
 
 					</div>
